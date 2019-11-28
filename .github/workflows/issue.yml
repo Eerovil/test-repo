@@ -2,7 +2,8 @@ name: 'Add new issue to project board'
 
 on:
   issues:
-    types: [opened]
+    types:
+    - opened
  
 jobs:
   test:

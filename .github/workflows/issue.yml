@@ -6,7 +6,7 @@ on:
     - opened
  
 jobs:
-  test:
+  add_to_project:
     runs-on: ubuntu-latest
     steps:
     - uses: protecomp/ga-issues-projects@master

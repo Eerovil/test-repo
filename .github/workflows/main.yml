@@ -1,0 +1,14 @@
+name: 'Master -> Develop merge'
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v1
+      with:
+        source_branch: master
+        target_branch: develop

@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
+    - uses: protecomp/ga-merge-branch
       with:
         source_branch: master
         target_branch: develop

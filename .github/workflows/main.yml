@@ -8,7 +8,7 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-    - uses: protecomp/ga-merge-branch@v3
+    - uses: protecomp/ga-merge-branch@v4
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         target_branch: develop

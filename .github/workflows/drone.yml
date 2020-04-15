@@ -1,0 +1,16 @@
+name: 'Restart all pull request builds'
+
+on:
+  push:
+    branches:
+      - master
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: protecomp/ga-drone-restart@master
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        repository: ${{ github.repository }}
+        drone_token: ${{ secrets.DRONE_TOKEN }}
+        drone_url: ${{ secrets.DRONE_URL }}
